@@ -1,6 +1,6 @@
-==============================
-Hedju - REST Header Pagination
-==============================
+===================================================
+Hedju - Header Pagination for Django REST Framework
+===================================================
 
 
 .. image:: https://img.shields.io/pypi/v/hedju.svg
@@ -14,8 +14,10 @@ Hedju - REST Header Pagination
         :alt: Documentation Status
 
 
-Replacement for Django REST Framework's ``LimitOffsetPagination`` class with optional enveloping.
+Replacement for Django REST Framework's pagination classes implementing
+Link header as defined in RFC5988_ with optional enveloping.
 
+.. note:: This is pre-alpha code. Use at your own discretion.
 
 * Free software: MIT license
 * Documentation: https://hedju.readthedocs.io.
@@ -39,3 +41,4 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
 .. _SUNSCRAPERS: https://sunscrapers.com/
+.. _RFC5988: http://tools.ietf.org/html/rfc5988#page-6
