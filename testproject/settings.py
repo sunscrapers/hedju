@@ -40,3 +40,7 @@ TEMPLATES = [
         'APP_DIRS': True,
     },
 ]
+
+REST_FRAMEWORK = {
+
+}

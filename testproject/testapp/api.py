@@ -21,6 +21,17 @@ class LimitOffsetViewSet(ExampleViewSet):
     pagination_class = hedju.HeaderLimitOffsetPagination
 
 
+class PageNumberViewSet(ExampleViewSet):
+    pagination_class = hedju.HeaderPageNumberPagination
+    page_size = 100
+
+
+class CursorViewSet(ExampleViewSet):
+    pagination_class = hedju.HeaderCursorPagination
+
+
 api_router = routers.SimpleRouter()
 api_router.register('examples', ExampleViewSet)
 api_router.register('limit_examples', LimitOffsetViewSet)
+api_router.register('page_examples', PageNumberViewSet)
+api_router.register('cursor_examples', CursorViewSet)

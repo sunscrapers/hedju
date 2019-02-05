@@ -15,6 +15,7 @@ class EnvelopingMixin:
 
 class HeaderPageNumberPagination(EnvelopingMixin,
                                  pagination.PageNumberPagination):
+
     def get_paginated_response(self, data):
         next_url = self.get_next_link()
         previous_url = self.get_previous_link()
@@ -111,6 +112,7 @@ class HeaderLimitOffsetPagination(EnvelopingMixin,
 
 
 class HeaderCursorPagination(EnvelopingMixin, pagination.CursorPagination):
+
     def get_paginated_response(self, data):
         next_url = self.get_next_link()
         previous_url = self.get_previous_link()
