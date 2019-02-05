@@ -16,4 +16,7 @@ class HedjuTestCase(TestCase):
 
     def test_001_endpoint(self):
         result = self.client.get('/examples/')
+        self.assertEqual(result.status_code, 200)
         self.assertEqual(len(result.data), BATCH_SIZE)
+
+    def test_002_limitoffset(self):

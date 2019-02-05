@@ -6,4 +6,7 @@ __author__ = """Sunscrapers"""
 __email__ = 'd.kozaczko@sunscrapers.com'
 __version__ = '0.0.2'
 
-from .pagination import *  # noqa
+import sys
+
+if 'sphinx' not in sys.modules:
+    from .pagination import *  # noqa
