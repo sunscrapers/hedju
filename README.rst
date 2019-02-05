@@ -17,6 +17,8 @@ Hedju - Header Pagination for Django REST Framework
 Replacement for Django REST Framework's pagination classes implementing
 Link header as defined in RFC5988_ with optional enveloping.
 
+Inspired by `this paragraph from excellent article<https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#pagination>`_ by Vinay Sahni
+
 .. note:: This is pre-alpha code. Use at your own discretion.
 
 * Free software: MIT license
