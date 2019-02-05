@@ -1,4 +1,5 @@
 from __future__ import absolute_import
+
 import os
 
 DEBUG = True
@@ -18,7 +19,6 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
 ]
 
-
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -32,10 +32,6 @@ INSTALLED_APPS = (
 
 STATIC_URL = '/static/'
 
-REST_FRAMEWORK = {
-
-}
-
 ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
@@ -44,4 +40,3 @@ TEMPLATES = [
         'APP_DIRS': True,
     },
 ]
-

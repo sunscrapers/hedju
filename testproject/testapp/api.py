@@ -2,6 +2,7 @@ from rest_framework import routers
 from rest_framework import serializers
 from rest_framework import viewsets
 
+import hedju
 from .models import Example
 
 
@@ -16,5 +17,10 @@ class ExampleViewSet(viewsets.ModelViewSet):
     queryset = Example.objects.all()
 
 
+class LimitOffsetViewSet(ExampleViewSet):
+    pagination_class = hedju.HeaderLimitOffsetPagination
+
+
 api_router = routers.SimpleRouter()
 api_router.register('examples', ExampleViewSet)
+api_router.register('limit_examples', LimitOffsetViewSet)
