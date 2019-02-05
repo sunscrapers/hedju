@@ -11,11 +11,17 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ ]
+requirements = []
 
-setup_requirements = [ ]
+setup_requirements = ['pytest-runner',]
 
-test_requirements = ['djangorestframework>=3.8']
+test_requirements = [
+    'django>=1.11,<2.3',
+    'djangorestframework>=3.8',
+    'factory_boy==2.11.1',
+    'pytest',
+    'pytest-django==3.4.7',
+]
 
 setup(
     author="Sunscrapers",
@@ -39,7 +45,7 @@ setup(
     name='hedju',
     packages=find_packages(include=['hedju']),
     setup_requires=setup_requirements,
-    test_suite='tests',
+    test_suite='testproject',
     tests_require=test_requirements,
     url='https://github.com/sunscrapers/hedju',
     version='0.0.2',
