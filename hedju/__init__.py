@@ -4,7 +4,7 @@
 
 __author__ = """Sunscrapers"""
 __email__ = 'd.kozaczko@sunscrapers.com'
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 import sys
 
